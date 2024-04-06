@@ -37,7 +37,7 @@ def generate_launch_description():
     tf_node = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        parameters=['0', '0', '0.25', '0', '0', '0', 'base_link', 'laser'],
+        arguments=['0', '0', '0.25', '0', '0', '0', 'base_link', 'laser'],
         )
 
     odom_node = Node(
